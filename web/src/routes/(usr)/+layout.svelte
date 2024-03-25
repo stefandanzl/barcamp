@@ -57,6 +57,10 @@ let visible = false;
 	<div class="fixed top-0 left-0 right-0 h-[var(--sat)] z-10">
 	<Layout.Header class="flex-row static z-0 justify-between p-8 bg-surface">
 		<Button href="/"><h2>BarCamp Graz</h2></Button>
+
+		<div class="w-10">
+			<Button href="/dash" type="primary">Organisator</Button>
+		</div>
 		<div  class="w-1/2">
 			<Tabs {currentTab} variant="bar">
 				{#each tabs as tab}
