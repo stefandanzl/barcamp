@@ -1,0 +1,1 @@
+show table of ALL users and their data with link to /users/[id]

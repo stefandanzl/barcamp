@@ -1,0 +1,1 @@
+show single topic from user with all details
