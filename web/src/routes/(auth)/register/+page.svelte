@@ -6,7 +6,7 @@
 	export let form;
 </script>
 
-<Wrapper title="Create a Guest account">
+<Wrapper title="Register your account">
 	<Field label="Email address" name="email" required autocomplete="email" type="email" />
 	<Field label="Password" name="password" required type="password" />
 	<Field label="Confirm Password" name="passwordConfirm" required type="password" />

@@ -14,8 +14,8 @@
 	</Layout.Header>
 	</div>
 	<Layout.Content>
-		<Layout.Content.Body class="flex items-center justify-center min-h-[600px]">
-        <h1>Welcome to BarCamp 2024 User App!</h1>
+		<Layout.Content.Body class="flex flex-col items-center  min-h-[600px] z-0 p-20">
+        <h1 class="p-8">Welcome to BarCamp 2024 User App!</h1>
 
 	
 		<div>
