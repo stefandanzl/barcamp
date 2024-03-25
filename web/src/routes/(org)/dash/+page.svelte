@@ -2,7 +2,7 @@
 	import { pb } from '$lib/pocketbase/client';
     import { Button, Layout } from 'stwui';
     let records : string;
-    let rec: unknown;
+    let rec: Array<unknown> = []
 
 
     const obj = {
@@ -230,7 +230,7 @@
 
 }}><span>Show me</span></Button>
 </div>
-<div class="whitespace-pre-wrap w-1/3">{rec}</div>
+<div class="whitespace-pre-wrap w-1/3">{records}</div>
 
 
 <div class="w-5">
@@ -238,7 +238,7 @@
 
 
 for (const i of obj.items){
-const k = await pb.collection('permissions').create({
+const k= await pb.collection('permissions').create({
     admin: i.admin,
     comment: i.comment,
     company: i.company,
@@ -250,10 +250,11 @@ const k = await pb.collection('permissions').create({
     title: i.title,
     topic:i.topic,
     vote: i.vote,
-});
+}) ;
 
-rec = [ rec,
-    k ]
+let a  = k as object
+ 
+rec.push(k );
 }
 }}><span>Show me</span></Button>
 </div>
