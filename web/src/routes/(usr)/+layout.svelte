@@ -103,7 +103,7 @@ let visible = false;
 			>
         <slot />
 
-		<div>{JSON.stringify(data.user?.id,null,4)}</div>
+		
 			</Layout.Content.Body
 		>
 	</Layout.Content>
